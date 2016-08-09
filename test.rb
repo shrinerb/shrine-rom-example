@@ -7,7 +7,7 @@ app = Rack::TestApp.wrap(Rack::Lint.new(App))
 response = app.post("/articles", multipart: {
   title: "Title",
   body:  "Body",
-  image: File.open("image.jpg", "rb"),
+  image: File.open("files/image.jpg", "rb"),
 })
 puts response.body_text
 
