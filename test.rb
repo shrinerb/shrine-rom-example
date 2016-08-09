@@ -17,7 +17,7 @@ response = app.get("/articles/#{article_id}")
 puts response.body_text
 
 response = app.put("/articles/#{article_id}", multipart: {
-  image: File.open("image.jpg", "rb"),
+  image: File.open("files/image.jpg", "rb"),
 })
 
 puts response.body_text
