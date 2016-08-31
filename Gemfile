@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "shrine", github: "janko-m/shrine"
+gem "shrine", "~> 2.3"
 gem "rom-repository"
 gem "rom-sql"
 gem "sqlite3"
